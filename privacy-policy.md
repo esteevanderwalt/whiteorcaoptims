@@ -28,4 +28,4 @@ Whezit is **not directed to children under 13**. We do not knowingly allow child
 We may update this Privacy Policy in the future (e.g., if cloud sync or accounts are added). Updates will be reflected within the App.
 
 ## 8. Contact
-For questions or concerns, contact: support@orcaoptims.com
+For questions or concerns, contact: support@whiteorcaoptims.com
