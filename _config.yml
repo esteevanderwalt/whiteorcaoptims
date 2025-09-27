@@ -1,7 +1,12 @@
 title: Whezit Policies
+description: Legal policies and terms for the Whezit bookmark management app
 theme: jekyll-theme-cayman
 
-url: "https://esteevanderwalt.github.io" # ← your GitHub Pages root
-baseurl: "/whiteorcaoptims" # ← repo name, with leading slash
+url: "https://www.whiteorcaoptims.com"
+baseurl: ""
 
 permalink: pretty
+
+# SEO and social
+author: White Orca Optims
+lang: en_US

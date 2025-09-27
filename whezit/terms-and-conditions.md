@@ -1,5 +1,7 @@
 ---
 title: Terms & Conditions
+description: Understand the terms of use for the Whezit bookmark management app
+layout: default
 ---
 
 # Terms & Conditions for Whezit
@@ -48,4 +50,10 @@ These Terms are governed by the laws of the hosting country.
 
 ## 10. Contact
 
-For questions or support, contact: support@whiteorcaoptims.com
+For questions about these Terms & Conditions or support, please contact us at:
+
+**Email:** [support@whiteorcaoptims.com](mailto:support@whiteorcaoptims.com)
+
+---
+
+_These Terms & Conditions were last updated on September 22, 2025._

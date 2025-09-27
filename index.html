@@ -1,30 +1,84 @@
 ---
+layout: default
 ---
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ site.lang | default: 'en' }}">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="{{ site.description | default: 'Legal policies and terms for the Whezit bookmark management app' }}"
+    />
+    <meta
+      name="author"
+      content="{{ site.author | default: 'White Orca Optims' }}"
+    />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
+    <meta property="og:title" content="{{ site.title }}" />
+    <meta property="og:description" content="{{ site.description }}" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary" />
+    <meta property="twitter:title" content="{{ site.title }}" />
+    <meta property="twitter:description" content="{{ site.description }}" />
+
     <title>{{ site.title }}</title>
+
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📚</text></svg>"
+    />
   </head>
   <body>
-    <main class="main-content">
-      <h1>Whezit Legal</h1>
-      <p>Policies and terms for the Whezit app.</p>
+    <main class="main-content" role="main">
+      <header class="page-header-custom">
+        <h1>Whezit Legal</h1>
+        <p class="page-description">
+          Policies and terms for the Whezit bookmark management app.
+        </p>
+      </header>
 
-      <ul class="link-grid">
-        <li>
-          <a class="link-card" href="'/whezit/privacy-policy">
-            <h3>Privacy Policy</h3>
-          </a>
-        </li>
-        <li>
-          <a class="link-card" href="/whezit/terms-and-conditions">
-            <h3>Terms &amp; Conditions</h3>
-          </a>
-        </li>
-      </ul>
+      <nav aria-label="Legal documents">
+        <ul class="link-grid">
+          <li>
+            <a
+              class="link-card"
+              href="/whezit/privacy-policy"
+              aria-describedby="privacy-desc"
+            >
+              <h3>Privacy Policy</h3>
+              <p id="privacy-desc">
+                Learn how we handle your data and protect your privacy
+              </p>
+            </a>
+          </li>
+          <li>
+            <a
+              class="link-card"
+              href="/whezit/terms-and-conditions"
+              aria-describedby="terms-desc"
+            >
+              <h3>Terms &amp; Conditions</h3>
+              <p id="terms-desc">
+                Understand the terms of use for the Whezit app
+              </p>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <footer class="page-footer">
+        <p>
+          <small>&copy; 2025 White Orca Optims. All rights reserved.</small>
+        </p>
+      </footer>
     </main>
   </body>
 </html>

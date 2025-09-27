@@ -1,10 +1,12 @@
 ---
 title: Privacy Policy
+description: Learn how Whezit handles your data and protects your privacy
+layout: default
 ---
 
 # Privacy Policy for Whezit
 
-**Effective Date:** 22 Septemeber 2025
+**Effective Date:** 22 September 2025
 
 ## 1. Introduction
 
@@ -40,4 +42,10 @@ We may update this Privacy Policy in the future (e.g., if cloud sync or accounts
 
 ## 8. Contact
 
-For questions or concerns, contact: support@whiteorcaoptims.com
+For questions or concerns about this Privacy Policy, please contact us at:
+
+**Email:** [support@whiteorcaoptims.com](mailto:support@whiteorcaoptims.com)
+
+---
+
+_This Privacy Policy was last updated on September 22, 2025._
