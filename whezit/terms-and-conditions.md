@@ -1,5 +1,5 @@
 ---
-layout: none
+title: Terms & Conditions
 ---
 
 # Terms & Conditions for Whezit

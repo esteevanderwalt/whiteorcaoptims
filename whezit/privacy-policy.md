@@ -1,5 +1,5 @@
 ---
-layout: none
+title: Privacy Policy
 ---
 
 # Privacy Policy for Whezit
