@@ -1,0 +1,136 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+/* ====== Global polish ====== */
+:root {
+  --container-max: 900px;
+  --radius: 14px;
+  --shadow: 0 10px 20px rgba(0, 0, 0, 0.06), 0 2px 6px rgba(0, 0, 0, 0.04);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Hide Cayman's giant repo banner */
+.page-header {
+  display: none;
+}
+
+/* Main content container */
+.main-content {
+  max-width: var(--container-max);
+  margin: 48px auto 72px;
+  padding: 0 20px;
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+/* Headings */
+.main-content h1 {
+  font-size: clamp(28px, 4vw, 36px);
+  margin: 0 0 10px;
+  letter-spacing: -0.01em;
+}
+.main-content h2 {
+  font-size: clamp(22px, 3vw, 28px);
+  margin-top: 36px;
+}
+
+/* Links */
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* ====== “Cards” for your index links ====== */
+.link-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 18px;
+  margin-top: 18px;
+  list-style: none;
+  padding: 0;
+}
+
+.link-card {
+  display: block;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  background: #fff;
+  padding: 18px 18px 16px;
+  transition: transform 0.12s ease, box-shadow 0.12s ease;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.link-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.08), 0 6px 10px rgba(0, 0, 0, 0.06);
+  text-decoration: none;
+}
+
+.link-card h3 {
+  margin: 0 0 6px;
+  font-size: 18px;
+}
+.link-card p {
+  margin: 0;
+  color: #5b6573;
+  font-size: 14px;
+}
+
+/* ====== Markdown page polish ====== */
+.main-content p,
+.main-content li {
+  color: #2e343d;
+}
+.main-content strong {
+  color: #1c2330;
+}
+
+.main-content blockquote {
+  border-left: 3px solid rgba(0, 0, 0, 0.12);
+  color: #4a5568;
+  margin: 18px 0;
+  padding: 8px 16px;
+  background: rgba(0, 0, 0, 0.02);
+  border-radius: 8px;
+}
+
+.main-content code {
+  background: rgba(27, 31, 35, 0.06);
+  border-radius: 6px;
+  padding: 0.2em 0.45em;
+}
+
+.main-content pre > code {
+  display: block;
+  padding: 14px;
+  border-radius: 12px;
+}
+
+/* Tables */
+.main-content table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+.main-content th,
+.main-content td {
+  padding: 12px 14px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+.main-content thead th {
+  background: #f7fafc;
+  font-weight: 600;
+}
