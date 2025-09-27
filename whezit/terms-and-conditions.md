@@ -1,5 +1,6 @@
 ---
-title: ""
+title: Terms & Conditions for Whezit
+layout: default
 ---
 
 # Terms & Conditions for Whezit
