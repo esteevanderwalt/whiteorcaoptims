@@ -1,3 +1,7 @@
+title: Whezit Policies
 theme: jekyll-theme-cayman
-baseurl: "/whiteorcaoptims.com"
-url: "https://esteevanderwalt.github.io"
+
+url: "https://esteevanderwalt.github.io" # ← your GitHub Pages root
+baseurl: "/whiteorcaoptims" # ← repo name, with leading slash
+
+permalink: pretty # optional, nice URLs
