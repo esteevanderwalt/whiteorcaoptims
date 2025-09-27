@@ -1,6 +1,5 @@
 ---
-title: Privacy Policy for Whezit
-layout: default
+layout: none
 ---
 
 # Privacy Policy for Whezit
