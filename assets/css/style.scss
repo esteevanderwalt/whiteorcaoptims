@@ -94,6 +94,7 @@ a:hover {
 .link-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-rows: 1fr; /* Ensures all cards have equal height */
   gap: 24px;
   margin-top: 32px;
   list-style: none;
@@ -101,16 +102,18 @@ a:hover {
 }
 
 .link-card {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   border-radius: var(--radius);
   box-shadow: var(--shadow);
   background: var(--bg-card);
   padding: 24px;
-  height: 50px;
   transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
   border: 1px solid var(--border-light);
   position: relative;
   overflow: hidden;
+  height: 100%; /* Ensures card takes full height of grid cell */
 }
 
 .link-card::before {
@@ -147,6 +150,7 @@ a:hover {
   font-size: 20px;
   font-weight: 600;
   color: var(--text-primary);
+  flex-shrink: 0; /* Prevents title from shrinking */
 }
 
 .link-card p {
@@ -154,6 +158,7 @@ a:hover {
   color: var(--text-secondary);
   font-size: 15px;
   line-height: 1.5;
+  flex-grow: 1; /* Allows description to fill available space */
 }
 
 /* ====== Enhanced Markdown Styling ====== */
