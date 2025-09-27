@@ -2,19 +2,31 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Whezit Policies</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{{ site.title }}</title>
   </head>
   <body>
-    <h1>Whezit Legal</h1>
-    <ul>
-      <li>
-        <a href="{{ site.baseurl }}/whezit/privacy-policy">Privacy Policy</a>
-      </li>
-      <li>
-        <a href="{{ site.baseurl }}/whezit/terms-and-conditions"
-          >Terms & Conditions</a
-        >
-      </li>
-    </ul>
+    <main class="main-content">
+      <h1>Whezit Legal</h1>
+      <p>Policies and terms for the Whezit app.</p>
+
+      <ul class="link-grid">
+        <li>
+          <a class="link-card" href="{{ site.baseurl }}/whezit/privacy-policy">
+            <h3>Privacy Policy</h3>
+            <p>How we handle your data.</p>
+          </a>
+        </li>
+        <li>
+          <a
+            class="link-card"
+            href="{{ site.baseurl }}/whezit/terms-and-conditions"
+          >
+            <h3>Terms &amp; Conditions</h3>
+            <p>Rules for using Whezit.</p>
+          </a>
+        </li>
+      </ul>
+    </main>
   </body>
 </html>
