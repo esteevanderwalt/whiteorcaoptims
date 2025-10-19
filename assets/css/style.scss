@@ -276,3 +276,20 @@ footer,
 #footer {
   display: none !important;
 }
+
+/* ===== Override theme green header color ===== */
+.page-header-custom h1 {
+  color: var(--text-primary) !important;
+}
+
+.page-header-custom h2 {
+  color: var(--text-primary) !important;
+}
+
+.page-header-custom {
+  background: none !important;
+}
+
+.page-header-custom p {
+  color: var(--text-secondary) !important;
+}
