@@ -278,18 +278,19 @@ footer,
 }
 
 /* ===== Override theme green header color ===== */
-.page-header-custom {
-  background: none !important; /* removes any colored background the theme might add */
+/* Force all headings in content to our color */
+.main-content h1,
+.main-content h2,
+.main-content h3,
+.main-content h4,
+.main-content h5,
+.main-content h6 {
+  color: var(--text-primary) !important;
 }
 
-/* Make all headings consistent */
-h1, h2, h3, h4, h5, h6 {
-  color: var(--text-primary) !important; /* overrides the theme’s green */
+/* Keep the custom page header clean */
+.page-header-custom h1,
+.page-header-custom p {
+  color: var(--text-primary) !important;
 }
-
-/* Give section headings a subtle divider for readability */
-.main-content h2 {
-  border-image: var(--gradient) 1; /* uses your existing purple-blue gradient */
-  border-bottom: 2px solid transparent;
-  border-image-slice: 1;
-}
+.page-header-custom p { color: var(--text-secondary) !important; }
