@@ -1,95 +1,70 @@
 ---
-layout: default
+layout: landing
+title: White Orca Optims — Privacy-first mobile apps
+description: White Orca Optims builds simple, privacy-first mobile apps that respect your data and your time.
 ---
 
-<!DOCTYPE html>
-<html lang="{{ site.lang | default: 'en' }}">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="{{ site.description | default: 'Legal policies and terms for the Whezit bookmark management app' }}"
-    />
-    <meta
-      name="author"
-      content="{{ site.author | default: 'White Orca Optims' }}"
-    />
+<!-- Site Nav -->
+<nav class="site-nav">
+  <div class="container">
+    <div class="site-nav__inner">
+      <a href="{{ '/' | relative_url }}" class="site-nav__brand">🐳 White Orca Optims</a>
+      <div class="site-nav__links">
+        <a href="{{ '/whezit/' | relative_url }}">Whezit</a>
+        <a href="mailto:{{ site.support_email }}">Contact</a>
+      </div>
+    </div>
+  </div>
+</nav>
 
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
-    <meta property="og:title" content="{{ site.title }}" />
-    <meta property="og:description" content="{{ site.description }}" />
+<!-- Studio Hero -->
+<section class="studio-hero">
+  <div class="container">
+    <div class="studio-badge">🐳 White Orca Optims · Independent Mobile Studio</div>
+    <h1>White Orca Optims</h1>
+    <p style="font-size: 1.25rem; max-width: 520px; margin: 16px auto 0; color: var(--text-secondary);">
+      Building simple, privacy-first mobile apps.<br>Your data stays yours.
+    </p>
+  </div>
+</section>
 
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary" />
-    <meta property="twitter:title" content="{{ site.title }}" />
-    <meta property="twitter:description" content="{{ site.description }}" />
+<hr class="divider" />
 
-    <title>{{ site.title }}</title>
-
-    <!-- Favicon -->
-    <link
-      rel="icon"
-      type="image/svg+xml"
-      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📚</text></svg>"
-    />
-  </head>
-  <body>
-    <main class="main-content" role="main">
-      <header class="page-header-custom">
-        <h1>Whezit Legal</h1>
-        <p class="page-description">
-          Policies and terms for the Whezit bookmark management app.
+<!-- Products -->
+<section class="section--sm">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-header__label">Products</span>
+      <h2>Our Apps</h2>
+      <p>Each app is designed with a single focus: do one thing well, with zero data collection.</p>
+    </div>
+    <div class="product-grid">
+      <div class="product-card">
+        <div class="product-card__icon">📌</div>
+        <div>
+          <div class="product-card__title">Whezit</div>
+          <div class="product-card__status">Live on App Store &amp; Google Play</div>
+        </div>
+        <p class="product-card__desc">
+          Save anything from any app using the native share sheet. Offline-first, no account required, your data never leaves your device.
         </p>
-      </header>
+        <a href="{{ '/whezit/' | relative_url }}" class="product-card__link">View Product →</a>
+      </div>
+    </div>
+  </div>
+</section>
 
-      <nav aria-label="Legal documents">
-        <ul class="link-grid">
-          <li>
-            <a
-              class="link-card"
-              href="{{ '/whezit/privacy-policy' | relative_url }}"
-              aria-describedby="privacy-desc"
-            >
-              <h3>Privacy Policy</h3>
-              <p id="privacy-desc">
-                Learn how we handle your data and protect your privacy
-              </p>
-            </a>
-          </li>
-          <li>
-            <a
-              class="link-card"
-              href="{{ '/whezit/terms-and-conditions' | relative_url }}"
-              aria-describedby="terms-desc"
-            >
-              <h3>Terms &amp; Conditions</h3>
-              <p id="terms-desc">
-                Understand the terms of use for the Whezit app
-              </p>
-            </a>
-          </li>
-        </ul>
-      </nav>
+<hr class="divider" />
 
-      <!-- Add a section for support contact -->
-      <section class="support-contact">
-        <h2>Support</h2>
-        <p>
-          For questions or support, please contact us at:
-          <a href="mailto:support@whiteorcaoptims.com"
-            >support@whiteorcaoptims.com</a
-          >
-        </p>
-      </section>
-
-      <footer class="page-footer">
-        <p>
-          <small>&copy; 2025 White Orca Optims. All rights reserved.</small>
-        </p>
-      </footer>
-    </main>
-  </body>
-</html>
+<!-- Footer -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="site-footer__links">
+      <a href="{{ '/whezit/' | relative_url }}">Whezit</a>
+      <a href="{{ '/whezit/privacy/' | relative_url }}">Privacy Policy</a>
+      <a href="{{ '/whezit/terms/' | relative_url }}">Terms &amp; Conditions</a>
+      <a href="mailto:{{ site.support_email }}">Contact</a>
+    </div>
+    <p class="site-footer__copy">&copy; 2025 White Orca Optims. All rights reserved.</p>
+  </div>
+</footer>

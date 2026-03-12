@@ -1,6 +1,7 @@
-title: Whezit Policies
-description: Legal policies and terms for the Whezit bookmark management app
-theme: jekyll-theme-cayman
+title: "Whezit — Save anything from any app"
+description: "Whezit is a privacy-first, local-first mobile app that lets you save anything from any app using the native share sheet."
+author: White Orca Optims
+lang: en_US
 
 url: "https://www.whiteorcaoptims.com"
 baseurl: ""
@@ -8,5 +9,18 @@ baseurl: ""
 permalink: pretty
 
 # SEO and social
-author: White Orca Optims
-lang: en_US
+og_image: "/assets/images/og-image.png"
+
+# Product Hunt announcement bar (set to true on launch day)
+product_hunt_live: false
+product_hunt_url: "https://www.producthunt.com"
+
+# App download links
+app_store_url: "https://apps.apple.com/app/id6754341704"
+google_play_url: "https://play.google.com/store/apps/details?id=com.whiteorcaoptims.whezit"
+
+# Contact
+support_email: "support@whiteorcaoptims.com"
+
+plugins:
+  - jekyll-redirect-from
