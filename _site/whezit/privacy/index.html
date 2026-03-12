@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en_US">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Primary Meta -->
+  <title>Privacy Policy | Whezit — Save anything from any app</title>
+  <meta name="description" content="Learn how Whezit handles your data and protects your privacy." />
+  <meta name="author" content="White Orca Optims" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="http://localhost:4000/whezit/privacy/" />
+  <meta property="og:title" content="Privacy Policy" />
+  <meta property="og:description" content="Learn how Whezit handles your data and protects your privacy." />
+  
+  <meta property="og:image" content="http://localhost:4000/assets/images/og-image.png" />
+  
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Privacy Policy" />
+  <meta name="twitter:description" content="Learn how Whezit handles your data and protects your privacy." />
+  
+  <meta name="twitter:image" content="http://localhost:4000/assets/images/og-image.png" />
+  
+
+  <!-- Canonical -->
+  <link rel="canonical" href="http://localhost:4000/whezit/privacy/" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐳</text></svg>" />
+
+  <!-- Inter Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="/assets/css/style.css" />
+</head>
+<body>
+  <nav class="site-nav">
+  <div class="container">
+    <div class="site-nav__inner">
+      <a href="/" class="site-nav__brand">
+        🐳 White Orca Optims
+        <span class="site-nav__sep">/</span>
+        <span class="site-nav__product">Whezit</span>
+      </a>
+      <div class="site-nav__links">
+        <a href="/whezit/">Whezit</a>
+        <a href="mailto:support@whiteorcaoptims.com">Contact</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<div class="legal-page">
+  <a href="/whezit/" class="legal-back">← Back to Whezit</a>
+
+  <h1>Privacy Policy for Whezit</h1>
+  <p class="effective-date">Effective Date: September 22, 2025 · Last updated: September 22, 2025</p>
+
+  <h2>1. Introduction</h2>
+  <p>Whezit ("the App") values your privacy. This Privacy Policy explains how your data is handled when you use the App.</p>
+
+  <h2>2. Data Collection</h2>
+  <ul>
+    <li>Whezit <strong>does not collect, transmit, or store personal information on external servers</strong>.</li>
+    <li>All bookmarks, categories, and settings are stored <strong>locally on your device</strong>.</li>
+    <li>No user accounts, analytics, or cloud services are used in this version of the App.</li>
+  </ul>
+
+  <h2>3. Data Usage</h2>
+  <ul>
+    <li>Your data remains under your full control.</li>
+    <li>The App only processes information locally to allow you to save, organize, and export bookmarks.</li>
+  </ul>
+
+  <h2>4. Data Sharing</h2>
+  <ul>
+    <li>We do not share, sell, or transmit your data to third parties.</li>
+    <li>If you export your data (e.g., as a CSV file), you are responsible for how and where it is stored or shared.</li>
+  </ul>
+
+  <h2>5. Security</h2>
+  <p>Your data's security depends on your device's operating system and settings (e.g., screen lock, encryption).</p>
+
+  <h2>6. Children's Privacy</h2>
+  <p>Whezit is <strong>not directed to children under 13</strong>. We do not knowingly allow children under 13 to use the App.</p>
+
+  <h2>7. Changes to This Policy</h2>
+  <p>We may update this Privacy Policy in the future (e.g., if cloud sync or accounts are added). Updates will be reflected within the App.</p>
+
+  <h2>8. Contact</h2>
+  <p>For questions or concerns about this Privacy Policy, please contact us at:</p>
+  <p><strong>Email:</strong> <a href="mailto:support@whiteorcaoptims.com">support@whiteorcaoptims.com</a></p>
+
+  <hr />
+  <p><em>This Privacy Policy was last updated on September 22, 2025.</em></p>
+</div>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="site-footer__links">
+      <a href="/whezit/">Whezit</a>
+      <a href="/whezit/privacy/">Privacy Policy</a>
+      <a href="/whezit/terms/">Terms &amp; Conditions</a>
+      <a href="mailto:support@whiteorcaoptims.com">Contact</a>
+    </div>
+    <p class="site-footer__copy">&copy; 2025 White Orca Optims. All rights reserved.</p>
+  </div>
+</footer>
+
+
+  <script>
+    // iOS / Android button targeting
+    (function() {
+      var ua = navigator.userAgent || navigator.vendor || window.opera;
+      var isIOS     = /iPad|iPhone|iPod/.test(ua) && !window.MSStream;
+      var isAndroid = /android/i.test(ua);
+      if (isIOS) {
+        document.querySelectorAll('.android-btn').forEach(function(el) { el.style.display = 'none'; });
+      } else if (isAndroid) {
+        document.querySelectorAll('.ios-btn').forEach(function(el) { el.style.display = 'none'; });
+      }
+    })();
+
+    // FAQ accordion
+    document.querySelectorAll('.faq-question').forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        var item = this.closest('.faq-item');
+        var isOpen = item.classList.contains('open');
+        // Close all
+        document.querySelectorAll('.faq-item.open').forEach(function(el) {
+          el.classList.remove('open');
+        });
+        // Open clicked if it was closed
+        if (!isOpen) item.classList.add('open');
+      });
+    });
+  </script>
+</body>
+</html>

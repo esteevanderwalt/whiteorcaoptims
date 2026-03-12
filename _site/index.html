@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en_US">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Primary Meta -->
+  <title>White Orca Optims — Privacy-first mobile apps | Whezit — Save anything from any app</title>
+  <meta name="description" content="White Orca Optims builds simple, privacy-first mobile apps that respect your data and your time." />
+  <meta name="author" content="White Orca Optims" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="http://localhost:4000/" />
+  <meta property="og:title" content="White Orca Optims — Privacy-first mobile apps" />
+  <meta property="og:description" content="White Orca Optims builds simple, privacy-first mobile apps that respect your data and your time." />
+  
+  <meta property="og:image" content="http://localhost:4000/assets/images/og-image.png" />
+  
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="White Orca Optims — Privacy-first mobile apps" />
+  <meta name="twitter:description" content="White Orca Optims builds simple, privacy-first mobile apps that respect your data and your time." />
+  
+  <meta name="twitter:image" content="http://localhost:4000/assets/images/og-image.png" />
+  
+
+  <!-- Canonical -->
+  <link rel="canonical" href="http://localhost:4000/" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐳</text></svg>" />
+
+  <!-- Inter Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="/assets/css/style.css" />
+</head>
+<body>
+  <!-- Site Nav -->
+<nav class="site-nav">
+  <div class="container">
+    <div class="site-nav__inner">
+      <a href="/" class="site-nav__brand">🐳 White Orca Optims</a>
+      <div class="site-nav__links">
+        <a href="/whezit/">Whezit</a>
+        <a href="mailto:support@whiteorcaoptims.com">Contact</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- Studio Hero -->
+<section class="studio-hero">
+  <div class="container">
+    <div class="studio-badge">🐳 White Orca Optims · Independent Mobile Studio</div>
+    <h1>White Orca Optims</h1>
+    <p style="font-size: 1.25rem; max-width: 520px; margin: 16px auto 0; color: var(--text-secondary);">
+      Building simple, privacy-first mobile apps.<br>Your data stays yours.
+    </p>
+  </div>
+</section>
+
+<hr class="divider" />
+
+<!-- Products -->
+<section class="section--sm">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-header__label">Products</span>
+      <h2>Our Apps</h2>
+      <p>Each app is designed with a single focus: do one thing well, with zero data collection.</p>
+    </div>
+    <div class="product-grid">
+      <div class="product-card">
+        <div class="product-card__icon">📌</div>
+        <div>
+          <div class="product-card__title">Whezit</div>
+          <div class="product-card__status">Live on App Store &amp; Google Play</div>
+        </div>
+        <p class="product-card__desc">
+          Save anything from any app using the native share sheet. Offline-first, no account required, your data never leaves your device.
+        </p>
+        <a href="/whezit/" class="product-card__link">View Product →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider" />
+
+<!-- Footer -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="site-footer__links">
+      <a href="/whezit/">Whezit</a>
+      <a href="/whezit/privacy/">Privacy Policy</a>
+      <a href="/whezit/terms/">Terms &amp; Conditions</a>
+      <a href="mailto:support@whiteorcaoptims.com">Contact</a>
+    </div>
+    <p class="site-footer__copy">&copy; 2025 White Orca Optims. All rights reserved.</p>
+  </div>
+</footer>
+
+
+  <script>
+    // iOS / Android button targeting
+    (function() {
+      var ua = navigator.userAgent || navigator.vendor || window.opera;
+      var isIOS     = /iPad|iPhone|iPod/.test(ua) && !window.MSStream;
+      var isAndroid = /android/i.test(ua);
+      if (isIOS) {
+        document.querySelectorAll('.android-btn').forEach(function(el) { el.style.display = 'none'; });
+      } else if (isAndroid) {
+        document.querySelectorAll('.ios-btn').forEach(function(el) { el.style.display = 'none'; });
+      }
+    })();
+
+    // FAQ accordion
+    document.querySelectorAll('.faq-question').forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        var item = this.closest('.faq-item');
+        var isOpen = item.classList.contains('open');
+        // Close all
+        document.querySelectorAll('.faq-item.open').forEach(function(el) {
+          el.classList.remove('open');
+        });
+        // Open clicked if it was closed
+        if (!isOpen) item.classList.add('open');
+      });
+    });
+  </script>
+</body>
+</html>

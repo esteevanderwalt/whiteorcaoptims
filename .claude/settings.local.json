@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(bundle exec:*)",
+      "Bash(bundle install:*)",
+      "Bash(which ruby:*)",
+      "Bash(rbenv versions:*)",
+      "Read(//opt/homebrew/Cellar/ruby/3.4.7/bin/**)",
+      "Bash(/opt/homebrew/opt/ruby/bin/ruby --version)",
+      "Bash(PATH=\"/opt/homebrew/opt/ruby/bin:$PATH\" bundle install 2>&1 | tail -15)",
+      "Bash(PATH=\"/opt/homebrew/opt/ruby/bin:$PATH\" GEM_HOME=\"/opt/homebrew/opt/ruby/gems\" bundle install 2>&1 | tail -10)",
+      "Bash(PATH=\"/opt/homebrew/opt/ruby/bin:/opt/homebrew/opt/ruby/bin:$PATH\" /opt/homebrew/opt/ruby/bin/gem install json -- --with-cflags=\"-Wno-error=incompatible-function-pointer-types\" 2>&1 | tail -5)",
+      "Bash(PATH=\"/opt/homebrew/opt/ruby/bin:$PATH\" /opt/homebrew/opt/ruby/bin/gem list 2>/dev/null | grep -E \"jekyll|json\" | head -10)",
+      "Bash(PATH=\"/opt/homebrew/opt/ruby/bin:$PATH\" /opt/homebrew/opt/ruby/bin/gem list 2>/dev/null | grep jekyll)",
+      "Bash(PATH=\"/opt/homebrew/opt/ruby/bin:$PATH\" /opt/homebrew/opt/ruby/bin/gem install jekyll jekyll-redirect-from 2>&1 | tail -10)",
+      "Bash(ls /Users/esteevanderwalt/Code/MyApps/whiteorcaoptims/Gemfile* 2>/dev/null || echo \"none\")"
+    ]
+  }
+}

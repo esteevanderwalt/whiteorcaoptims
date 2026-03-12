@@ -1,0 +1,318 @@
+---
+layout: landing
+title: "Whezit — Save anything from any app"
+description: "Whezit lets you save anything from any app using the native share sheet. Local-first, privacy-focused, no account required."
+permalink: /whezit/
+---
+
+<!-- Announcement Bar (toggle in _config.yml: product_hunt_live: true) -->
+{% if site.product_hunt_live %}
+<div class="announcement-bar">
+  🚀 We're live on <a href="{{ site.product_hunt_url }}" target="_blank" rel="noopener">Product Hunt</a> today — support us with an upvote! ❤️
+</div>
+{% endif %}
+
+<!-- Site Nav -->
+<nav class="site-nav">
+  <div class="container">
+    <div class="site-nav__inner">
+      <a href="{{ '/' | relative_url }}" class="site-nav__brand">
+        🐳 White Orca Optims
+        <span class="site-nav__sep">/</span>
+        <span class="site-nav__product">Whezit</span>
+      </a>
+      <div class="site-nav__links">
+        <a href="{{ '/whezit/privacy/' | relative_url }}">Privacy</a>
+        <a href="{{ '/whezit/terms/' | relative_url }}">Terms</a>
+        <a href="mailto:{{ site.support_email }}">Support</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- ===== HERO ===== -->
+<section class="hero">
+  <div class="container">
+    <div class="hero__eyebrow">📌 Available on iOS &amp; Android</div>
+    <h1 class="hero__headline">Save anything<br />from any app.</h1>
+    <p class="hero__subhead">
+      Whezit plugs into your phone's share sheet so you can capture links, text, and content on the fly — no copy-paste, no account, no cloud.
+    </p>
+    <!-- Desktop: QR code (scanned with phone) -->
+    <div class="download-desktop hero__cta">
+      <div class="qr-block">
+        <img src="{{ '/assets/images/qr_smart.svg' | relative_url }}"
+             alt="Scan to download Whezit"
+             width="160" height="160"
+             onerror="this.src='https://api.qrserver.com/v1/create-qr-code/?size=160x160&color=F1F5F9&bgcolor=1E293B&data={{ site.url }}/download/'" />
+        <p class="qr-label">Scan with your phone</p>
+        <p class="qr-sublabel">iOS &amp; Android · Mobile only</p>
+      </div>
+    </div>
+
+    <!-- Mobile: show the right store button per platform -->
+    <div class="download-mobile btn-group hero__cta">
+      <a href="{{ site.app_store_url }}" class="store-btn ios-btn" target="_blank" rel="noopener">
+        <span class="store-btn__icon">🍎</span>
+        <span class="store-btn__text">
+          <span class="store-btn__label">Download on the</span>
+          <span class="store-btn__name">App Store</span>
+        </span>
+      </a>
+      <a href="{{ site.google_play_url }}" class="store-btn android-btn" target="_blank" rel="noopener">
+        <span class="store-btn__icon">▶</span>
+        <span class="store-btn__text">
+          <span class="store-btn__label">Get it on</span>
+          <span class="store-btn__name">Google Play</span>
+        </span>
+      </a>
+    </div>
+
+    <!-- Phone Mockup -->
+    <div class="hero__mockup">
+      <div class="hero__mockup-frame">
+        {% assign hero_screenshot = site.static_files | where_exp: "f", "f.path contains 'screenshots/hero'" | first %}
+        {% if hero_screenshot %}
+          <img src="{{ hero_screenshot.path | relative_url }}" alt="Whezit app screenshot" />
+        {% else %}
+          <span>Screenshot<br />coming soon</span>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Proof Chips -->
+<div class="container">
+  <div class="proof-chips">
+    <span class="chip chip--brand">🔒 Local-first</span>
+    <span class="chip chip--brand">🛡️ Privacy-focused</span>
+    <span class="chip chip--accent">📱 iOS + Android</span>
+    <span class="chip chip--accent">⚡ Native share capture</span>
+    <span class="chip chip--success">✅ No account required</span>
+    <span class="chip chip--success">📴 Works offline</span>
+  </div>
+</div>
+
+<hr class="divider" style="margin: 0;" />
+
+<!-- ===== HOW IT WORKS ===== -->
+<section class="section" style="background: var(--bg-subtle);">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-header__label">How it works</span>
+      <h2>Three taps. Done.</h2>
+      <p>Whezit fits into how you already use your phone.</p>
+    </div>
+    <div class="steps">
+      <div class="step">
+        <div class="step__number">1</div>
+        <h3>Share</h3>
+        <p>Tap the share button in any app — browser, social media, podcast player, anything.</p>
+      </div>
+      <div class="step">
+        <div class="step__number">2</div>
+        <h3>Save</h3>
+        <p>Select Whezit from the share sheet. It captures the content instantly, even offline.</p>
+      </div>
+      <div class="step">
+        <div class="step__number">3</div>
+        <h3>Organize</h3>
+        <p>Tag, search, and manage everything in one place — all stored privately on your device.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SCREENSHOTS ===== -->
+<section class="section--sm">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-header__label">Screenshots</span>
+      <h2>See it in action</h2>
+    </div>
+    <div class="screenshots-strip">
+      {% assign screenshots = site.static_files | where_exp: "f", "f.path contains 'screenshots/'" %}
+      {% if screenshots.size > 0 %}
+        {% for screenshot in screenshots limit: 6 %}
+        <div class="screenshot-frame">
+          <img src="{{ screenshot.path | relative_url }}" alt="Whezit screenshot" loading="lazy" />
+        </div>
+        {% endfor %}
+      {% else %}
+        {% for i in (1..5) %}
+        <div class="screenshot-frame">Screen {{ i }}</div>
+        {% endfor %}
+      {% endif %}
+    </div>
+  </div>
+</section>
+
+<!-- ===== FEATURES BENTO GRID ===== -->
+<section class="section" style="background: var(--bg-subtle);">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-header__label">Features</span>
+      <h2>Built for real mobile life</h2>
+      <p>Everything you need to stop losing things. Nothing you don't.</p>
+    </div>
+    <div class="bento-grid">
+      <div class="bento-card">
+        <span class="bento-card__icon">🌐</span>
+        <h3>Universal share capture</h3>
+        <p>Works with every app on your phone. If it has a share button, Whezit can save it — links, text, images, and more.</p>
+      </div>
+      <div class="bento-card">
+        <span class="bento-card__icon">🗂️</span>
+        <h3>Smart organization</h3>
+        <p>Add tags, create collections, and keep everything tidy without thinking about it.</p>
+      </div>
+      <div class="bento-card">
+        <span class="bento-card__icon">🔍</span>
+        <h3>Powerful search</h3>
+        <p>Find anything instantly. Full-text search across all your saved content.</p>
+      </div>
+      <div class="bento-card">
+        <span class="bento-card__icon">📴</span>
+        <h3>Offline-first</h3>
+        <p>No internet? No problem. Save and browse your library anywhere, anytime.</p>
+      </div>
+      <div class="bento-card">
+        <span class="bento-card__icon">📤</span>
+        <h3>CSV export</h3>
+        <p>Export your entire library as a CSV file. Your data, yours to keep.</p>
+      </div>
+      <div class="bento-card">
+        <span class="bento-card__icon">🌙</span>
+        <h3>Dark mode</h3>
+        <p>Follows your system preference. Looks great day and night.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== WHY WHEZIT CALLOUT ===== -->
+<section class="section--sm">
+  <div class="container">
+    <div class="callout">
+      <h2>Built for the reality of mobile life.</h2>
+      <p>Most save-later tools are designed for browsers. Whezit is designed for the phone in your hand — where you actually discover things worth saving.</p>
+      <div class="btn-group" style="justify-content: center;">
+        <a href="{{ site.app_store_url }}" class="btn btn--primary ios-btn" target="_blank" rel="noopener">Download for iOS</a>
+        <a href="{{ site.google_play_url }}" class="btn btn--secondary android-btn" target="_blank" rel="noopener">Download for Android</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TECH STACK ===== -->
+<section class="section--tight" style="background: var(--bg-subtle);">
+  <div class="container">
+    <div class="section-header" style="margin-bottom: 32px;">
+      <span class="section-header__label">Built with</span>
+      <h2>Tech Stack</h2>
+    </div>
+    <div class="tech-stack">
+      <span class="chip">⚛️ React Native</span>
+      <span class="chip">📦 Expo</span>
+      <span class="chip">🔷 TypeScript</span>
+      <span class="chip">🗄️ SQLite</span>
+      <span class="chip">🏠 Local-first</span>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FAQ ===== -->
+<section class="section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-header__label">FAQ</span>
+      <h2>Common questions</h2>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item">
+        <button class="faq-question">Does it work without internet?</button>
+        <div class="faq-answer">
+          <p>Yes. Whezit is fully offline-capable. All your saves are stored locally on your device. You don't need an internet connection to save, browse, search, or export your library.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">Where is my data stored?</button>
+        <div class="faq-answer">
+          <p>Everything is stored locally on your device using SQLite. Nothing is sent to external servers. No telemetry, no analytics, no cloud sync in this version of the app.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">Do I need to create an account?</button>
+        <div class="faq-answer">
+          <p>No account, no sign-up, no email required. Open the app and start saving immediately.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">Is it available on both iOS and Android?</button>
+        <div class="faq-answer">
+          <p>Yes. Whezit is available on both the Apple App Store and Google Play Store. It's built with React Native and Expo for a consistent experience on both platforms.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">Can I export my data?</button>
+        <div class="faq-answer">
+          <p>Yes. You can export your entire saved library as a CSV file at any time. Your data is always yours to take with you.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">What can I save with Whezit?</button>
+        <div class="faq-answer">
+          <p>Anything that supports the native share sheet — links, articles, social media posts, podcast episodes, text snippets, images, and more. If your app has a share button, Whezit can capture it.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FINAL CTA ===== -->
+<section class="section--tight" style="background: var(--bg-subtle);">
+  <div class="container" style="text-align: center;">
+    <h2 style="margin-bottom: 16px;">Stop losing the things you meant to save.</h2>
+    <p style="margin-bottom: 36px; font-size: 1.05rem;">Free to download. No account. No subscription. Just save.</p>
+    <div class="download-desktop" style="justify-content: center;">
+      <div class="qr-block">
+        <img src="{{ '/assets/images/qr_smart.svg' | relative_url }}"
+             alt="Scan to download Whezit"
+             width="160" height="160"
+             onerror="this.src='https://api.qrserver.com/v1/create-qr-code/?size=160x160&color=F1F5F9&bgcolor=1E293B&data={{ site.url }}/download/'" />
+        <p class="qr-label">Scan with your phone</p>
+        <p class="qr-sublabel">iOS &amp; Android · Mobile only</p>
+      </div>
+    </div>
+    <div class="download-mobile btn-group" style="justify-content: center;">
+      <a href="{{ site.app_store_url }}" class="store-btn ios-btn" target="_blank" rel="noopener">
+        <span class="store-btn__icon">🍎</span>
+        <span class="store-btn__text">
+          <span class="store-btn__label">Download on the</span>
+          <span class="store-btn__name">App Store</span>
+        </span>
+      </a>
+      <a href="{{ site.google_play_url }}" class="store-btn android-btn" target="_blank" rel="noopener">
+        <span class="store-btn__icon">▶</span>
+        <span class="store-btn__text">
+          <span class="store-btn__label">Get it on</span>
+          <span class="store-btn__name">Google Play</span>
+        </span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="site-footer__links">
+      <a href="{{ '/' | relative_url }}">White Orca Optims</a>
+      <a href="{{ '/whezit/privacy/' | relative_url }}">Privacy Policy</a>
+      <a href="{{ '/whezit/terms/' | relative_url }}">Terms &amp; Conditions</a>
+      <a href="mailto:{{ site.support_email }}">Contact</a>
+    </div>
+    <p class="site-footer__copy">&copy; 2025 White Orca Optims. All rights reserved.</p>
+  </div>
+</footer>

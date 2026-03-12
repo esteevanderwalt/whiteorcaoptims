@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Download Whezit</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Inter', sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      margin: 0;
+      background: #0F172A;
+      color: #F1F5F9;
+    }
+    p { text-align: center; opacity: 0.6; font-size: 0.9rem; }
+  </style>
+</head>
+<body>
+  <p>Redirecting to the right store…</p>
+  <script>
+    var ua = navigator.userAgent || navigator.vendor || window.opera;
+    if (/iPad|iPhone|iPod/.test(ua) && !window.MSStream) {
+      window.location.replace("https://apps.apple.com");
+    } else if (/android/i.test(ua)) {
+      window.location.replace("https://play.google.com");
+    } else {
+      // Desktop fallback — send to product page
+      window.location.replace("/whezit/");
+    }
+  </script>
+</body>
+</html>

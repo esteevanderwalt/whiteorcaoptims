@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en_US">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Primary Meta -->
+  <title>Terms &amp; Conditions | Whezit — Save anything from any app</title>
+  <meta name="description" content="Understand the terms of use for the Whezit bookmark management app." />
+  <meta name="author" content="White Orca Optims" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="http://localhost:4000/whezit/terms/" />
+  <meta property="og:title" content="Terms &amp; Conditions" />
+  <meta property="og:description" content="Understand the terms of use for the Whezit bookmark management app." />
+  
+  <meta property="og:image" content="http://localhost:4000/assets/images/og-image.png" />
+  
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Terms &amp; Conditions" />
+  <meta name="twitter:description" content="Understand the terms of use for the Whezit bookmark management app." />
+  
+  <meta name="twitter:image" content="http://localhost:4000/assets/images/og-image.png" />
+  
+
+  <!-- Canonical -->
+  <link rel="canonical" href="http://localhost:4000/whezit/terms/" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐳</text></svg>" />
+
+  <!-- Inter Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="/assets/css/style.css" />
+</head>
+<body>
+  <nav class="site-nav">
+  <div class="container">
+    <div class="site-nav__inner">
+      <a href="/" class="site-nav__brand">
+        🐳 White Orca Optims
+        <span class="site-nav__sep">/</span>
+        <span class="site-nav__product">Whezit</span>
+      </a>
+      <div class="site-nav__links">
+        <a href="/whezit/">Whezit</a>
+        <a href="mailto:support@whiteorcaoptims.com">Contact</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<div class="legal-page">
+  <a href="/whezit/" class="legal-back">← Back to Whezit</a>
+
+  <h1>Terms &amp; Conditions for Whezit</h1>
+  <p class="effective-date">Effective Date: September 22, 2025 · Last updated: September 22, 2025</p>
+
+  <h2>1. Acceptance of Terms</h2>
+  <p>By using Whezit ("the App"), you agree to these Terms. If you do not agree, please discontinue use.</p>
+
+  <h2>2. Eligibility</h2>
+  <p>The App is intended for users <strong>aged 13 and older</strong>. By using the App, you confirm that you meet this requirement.</p>
+
+  <h2>3. Use of the App</h2>
+  <ul>
+    <li>The App is for personal, non-commercial use only.</li>
+    <li>You agree not to use the App for unlawful purposes.</li>
+    <li>You are responsible for managing and securing your data on your device.</li>
+  </ul>
+
+  <h2>4. Intellectual Property</h2>
+  <ul>
+    <li>Whezit, including its design, features, and content, is owned by White Orca Optims.</li>
+    <li>You may not copy, modify, or distribute the App without permission.</li>
+  </ul>
+
+  <h2>5. Data Responsibility</h2>
+  <ul>
+    <li>All bookmarks and categories you create remain under your control.</li>
+    <li>If you export your data (e.g., CSV files), you are solely responsible for its security and handling.</li>
+  </ul>
+
+  <h2>6. Disclaimer of Warranties</h2>
+  <p>The App is provided "as is," without any warranties of any kind. We do not guarantee that the App will be error-free or meet your requirements.</p>
+
+  <h2>7. Limitation of Liability</h2>
+  <p>We are not liable for any loss, damage, or data issues that may result from using the App.</p>
+
+  <h2>8. Updates and Changes</h2>
+  <p>We may update these Terms if new features are introduced. Continued use of the App means you accept any changes.</p>
+
+  <h2>9. Governing Law</h2>
+  <p>These Terms are governed by the laws of the hosting country.</p>
+
+  <h2>10. Contact</h2>
+  <p>For questions about these Terms &amp; Conditions or support, please contact us at:</p>
+  <p><strong>Email:</strong> <a href="mailto:support@whiteorcaoptims.com">support@whiteorcaoptims.com</a></p>
+
+  <hr />
+  <p><em>These Terms &amp; Conditions were last updated on September 22, 2025.</em></p>
+</div>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="site-footer__links">
+      <a href="/whezit/">Whezit</a>
+      <a href="/whezit/privacy/">Privacy Policy</a>
+      <a href="/whezit/terms/">Terms &amp; Conditions</a>
+      <a href="mailto:support@whiteorcaoptims.com">Contact</a>
+    </div>
+    <p class="site-footer__copy">&copy; 2025 White Orca Optims. All rights reserved.</p>
+  </div>
+</footer>
+
+
+  <script>
+    // iOS / Android button targeting
+    (function() {
+      var ua = navigator.userAgent || navigator.vendor || window.opera;
+      var isIOS     = /iPad|iPhone|iPod/.test(ua) && !window.MSStream;
+      var isAndroid = /android/i.test(ua);
+      if (isIOS) {
+        document.querySelectorAll('.android-btn').forEach(function(el) { el.style.display = 'none'; });
+      } else if (isAndroid) {
+        document.querySelectorAll('.ios-btn').forEach(function(el) { el.style.display = 'none'; });
+      }
+    })();
+
+    // FAQ accordion
+    document.querySelectorAll('.faq-question').forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        var item = this.closest('.faq-item');
+        var isOpen = item.classList.contains('open');
+        // Close all
+        document.querySelectorAll('.faq-item.open').forEach(function(el) {
+          el.classList.remove('open');
+        });
+        // Open clicked if it was closed
+        if (!isOpen) item.classList.add('open');
+      });
+    });
+  </script>
+</body>
+</html>
