@@ -200,13 +200,17 @@ a:hover {
 .site-nav__brand {
   font-weight: 700;
   font-size: 1.1rem;
-  color: var(--text);
   display: flex;
   align-items: center;
   gap: 8px;
 }
 
-.site-nav__brand:hover {
+.site-nav__brand a {
+  color: var(--text);
+  font-weight: 700;
+}
+
+.site-nav__brand a:hover {
   color: var(--brand);
 }
 

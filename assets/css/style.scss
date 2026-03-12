@@ -161,12 +161,15 @@ a:hover { color: var(--brand-dark); }
 .site-nav__brand {
   font-weight: 700;
   font-size: 1.1rem;
-  color: var(--text);
   display: flex;
   align-items: center;
   gap: 8px;
 }
-.site-nav__brand:hover { color: var(--brand); }
+.site-nav__brand a {
+  color: var(--text);
+  font-weight: 700;
+}
+.site-nav__brand a:hover { color: var(--brand); }
 .site-nav__sep {
   color: var(--text-muted);
   font-weight: 300;
