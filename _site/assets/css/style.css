@@ -316,21 +316,21 @@ a:hover {
   display: inline-flex;
   align-items: center;
   gap: 10px;
-  padding: 12px 22px;
-  background: #000435;
-  color: #FFFFFF !important;
-  border-radius: var(--radius);
+  padding: 12px 24px;
+  background: transparent;
+  color: var(--text) !important;
+  border-radius: var(--radius-full);
   font-weight: 600;
   font-size: 0.9rem;
   transition: all var(--transition);
-  border: 2px solid #21D6D6;
+  border: 1.5px solid var(--border);
 }
 
 .store-btn:hover {
-  background: #11164A;
-  color: #FFFFFF !important;
-  transform: translateY(-2px);
-  box-shadow: 0 8px 24px rgba(33, 214, 214, 0.25);
+  background: var(--bg-subtle);
+  color: var(--text) !important;
+  border-color: var(--accent);
+  transform: translateY(-1px);
 }
 
 .store-btn__icon {
@@ -590,14 +590,14 @@ a:hover {
 
 .callout .btn--secondary {
   background: transparent;
-  color: #21D6D6;
-  border-color: rgba(33, 214, 214, 0.5);
+  color: #fff;
+  border-color: rgba(255, 255, 255, 0.3);
 }
 
 .callout .btn--secondary:hover {
-  background: rgba(33, 214, 214, 0.1);
-  color: #21D6D6;
-  border-color: #21D6D6;
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
+  border-color: rgba(255, 255, 255, 0.6);
 }
 
 /* ---- Tech Stack ---- */
