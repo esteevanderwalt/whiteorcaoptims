@@ -26,7 +26,12 @@
       "Read(//Users/esteevanderwalt/**)",
       "Bash(source ~/.zshrc && which jekyll)",
       "Bash(jekyll build:*)",
-      "Bash(source ~/.zshrc && jekyll build 2>&1)"
+      "Bash(source ~/.zshrc && jekyll build 2>&1)",
+      "Bash(git -C /Users/esteevanderwalt/Code/MyApps/whiteorcaoptims remote -v)",
+      "Bash(git -C /Users/esteevanderwalt/Code/MyApps/whiteorcaoptims status)",
+      "Bash(git -C /Users/esteevanderwalt/Code/MyApps/whiteorcaoptims diff whezit/index.html assets/css/style.scss)",
+      "Bash(git -C /Users/esteevanderwalt/Code/MyApps/whiteorcaoptims ls-files whezit/index.html assets/css/style.scss)",
+      "Bash(git -C /Users/esteevanderwalt/Code/MyApps/whiteorcaoptims diff HEAD whezit/index.html assets/css/style.scss | head -60)"
     ]
   }
 }
