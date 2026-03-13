@@ -330,7 +330,7 @@ a:hover {
 }
 
 .store-badge img {
-  height: 48px;
+  height: auto;
   width: auto;
   display: block;
 }
@@ -991,9 +991,6 @@ a:hover {
   }
   .store-badges {
     justify-content: center;
-  }
-  .store-badge img {
-    height: 44px;
   }
 }
 @media (prefers-reduced-motion: reduce) {

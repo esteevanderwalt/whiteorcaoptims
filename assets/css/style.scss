@@ -261,7 +261,7 @@ a:hover { color: var(--brand-dark); }
   transform: translateY(-1px);
 }
 .store-badge img {
-  height: 48px;
+  height: auto;
   width: auto;
   display: block;
 }
@@ -755,7 +755,6 @@ a:hover { color: var(--brand-dark); }
   .hero { padding: 56px 0 48px; }
   .hero__cta { flex-direction: column; align-items: center; }
   .store-badges { justify-content: center; }
-  .store-badge img { height: 44px; }
 }
 
 @media (prefers-reduced-motion: reduce) {
