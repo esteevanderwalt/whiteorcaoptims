@@ -330,7 +330,7 @@ a:hover {
 }
 
 .store-badge img {
-  height: auto;
+  height: 60px;
   width: auto;
   display: block;
 }
