@@ -11,11 +11,11 @@
 
   <!-- Open Graph -->
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="http://localhost:4000/whezit/" />
+  <meta property="og:url" content="https://www.whiteorcaoptims.com/whezit/" />
   <meta property="og:title" content="Whezit — Save anything from any app" />
   <meta property="og:description" content="Whezit lets you save anything from any app using the native share sheet. Local-first, privacy-focused, no account required." />
   
-  <meta property="og:image" content="http://localhost:4000/assets/images/og-image.png" />
+  <meta property="og:image" content="https://www.whiteorcaoptims.com/assets/images/og-image.png" />
   
 
   <!-- Twitter Card -->
@@ -23,11 +23,11 @@
   <meta name="twitter:title" content="Whezit — Save anything from any app" />
   <meta name="twitter:description" content="Whezit lets you save anything from any app using the native share sheet. Local-first, privacy-focused, no account required." />
   
-  <meta name="twitter:image" content="http://localhost:4000/assets/images/og-image.png" />
+  <meta name="twitter:image" content="https://www.whiteorcaoptims.com/assets/images/og-image.png" />
   
 
   <!-- Canonical -->
-  <link rel="canonical" href="http://localhost:4000/whezit/" />
+  <link rel="canonical" href="https://www.whiteorcaoptims.com/whezit/" />
 
   <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐳</text></svg>" />
@@ -76,27 +76,19 @@
         <img src="/assets/images/qr_smart.svg"
              alt="Scan to download Whezit"
              width="160" height="160"
-             onerror="this.src='https://api.qrserver.com/v1/create-qr-code/?size=160x160&color=F1F5F9&bgcolor=1E293B&data=http://localhost:4000/download/'" />
+             onerror="this.src='https://api.qrserver.com/v1/create-qr-code/?size=160x160&color=F1F5F9&bgcolor=1E293B&data=https://www.whiteorcaoptims.com/download/'" />
         <p class="qr-label">Scan with your phone</p>
         <p class="qr-sublabel">iOS &amp; Android · Mobile only</p>
       </div>
     </div>
 
     <!-- Mobile: show the right store button per platform -->
-    <div class="download-mobile btn-group hero__cta">
-      <a href="https://apps.apple.com" class="store-btn ios-btn" target="_blank" rel="noopener">
-        <span class="store-btn__icon">🍎</span>
-        <span class="store-btn__text">
-          <span class="store-btn__label">Download on the</span>
-          <span class="store-btn__name">App Store</span>
-        </span>
+    <div class="download-mobile store-badges hero__cta">
+      <a href="https://apps.apple.com/app/id6754341704" class="store-badge ios-btn" target="_blank" rel="noopener">
+        <img src="/assets/images/app-store-apple-logo.svg" alt="Download on the App Store" height="48" />
       </a>
-      <a href="https://play.google.com" class="store-btn android-btn" target="_blank" rel="noopener">
-        <span class="store-btn__icon">▶</span>
-        <span class="store-btn__text">
-          <span class="store-btn__label">Get it on</span>
-          <span class="store-btn__name">Google Play</span>
-        </span>
+      <a href="https://play.google.com/store/apps/details?id=com.whiteorcaoptims.whezit" class="store-badge android-btn" target="_blank" rel="noopener">
+        <img src="/assets/images/google-play-badge-logo.svg" alt="Get it on Google Play" height="48" />
       </a>
     </div>
 
@@ -115,12 +107,12 @@
 <!-- Proof Chips -->
 <div class="container">
   <div class="proof-chips">
-    <span class="chip chip--brand">🔒 Local-first</span>
-    <span class="chip chip--brand">🛡️ Privacy-focused</span>
-    <span class="chip chip--accent">📱 iOS + Android</span>
-    <span class="chip chip--accent">⚡ Native share capture</span>
-    <span class="chip chip--success">✅ No account required</span>
-    <span class="chip chip--success">📴 Works offline</span>
+    <span class="chip">🔒 Local-first</span>
+    <span class="chip">🛡️ Privacy-focused</span>
+    <span class="chip">📱 iOS + Android</span>
+    <span class="chip">⚡ Native share capture</span>
+    <span class="chip">✅ No account required</span>
+    <span class="chip">📴 Works offline</span>
   </div>
 </div>
 
@@ -229,9 +221,13 @@
     <div class="callout">
       <h2>Built for the reality of mobile life.</h2>
       <p>Most save-later tools are designed for browsers. Whezit is designed for the phone in your hand — where you actually discover things worth saving.</p>
-      <div class="btn-group" style="justify-content: center;">
-        <a href="https://apps.apple.com" class="btn btn--primary ios-btn" target="_blank" rel="noopener">Download for iOS</a>
-        <a href="https://play.google.com" class="btn btn--secondary android-btn" target="_blank" rel="noopener">Download for Android</a>
+      <div class="store-badges" style="justify-content: center;">
+        <a href="https://apps.apple.com/app/id6754341704" class="store-badge ios-btn" target="_blank" rel="noopener">
+          <img src="/assets/images/app-store-apple-logo.svg" alt="Download on the App Store" height="48" />
+        </a>
+        <a href="https://play.google.com/store/apps/details?id=com.whiteorcaoptims.whezit" class="store-badge android-btn" target="_blank" rel="noopener">
+          <img src="/assets/images/google-play-badge-logo.svg" alt="Get it on Google Play" height="48" />
+        </a>
       </div>
     </div>
   </div>
@@ -312,25 +308,17 @@
         <img src="/assets/images/qr_smart.svg"
              alt="Scan to download Whezit"
              width="160" height="160"
-             onerror="this.src='https://api.qrserver.com/v1/create-qr-code/?size=160x160&color=F1F5F9&bgcolor=1E293B&data=http://localhost:4000/download/'" />
+             onerror="this.src='https://api.qrserver.com/v1/create-qr-code/?size=160x160&color=F1F5F9&bgcolor=1E293B&data=https://www.whiteorcaoptims.com/download/'" />
         <p class="qr-label">Scan with your phone</p>
         <p class="qr-sublabel">iOS &amp; Android · Mobile only</p>
       </div>
     </div>
-    <div class="download-mobile btn-group" style="justify-content: center;">
-      <a href="https://apps.apple.com" class="store-btn ios-btn" target="_blank" rel="noopener">
-        <span class="store-btn__icon">🍎</span>
-        <span class="store-btn__text">
-          <span class="store-btn__label">Download on the</span>
-          <span class="store-btn__name">App Store</span>
-        </span>
+    <div class="download-mobile store-badges" style="justify-content: center;">
+      <a href="https://apps.apple.com/app/id6754341704" class="store-badge ios-btn" target="_blank" rel="noopener">
+        <img src="/assets/images/app-store-apple-logo.svg" alt="Download on the App Store" height="48" />
       </a>
-      <a href="https://play.google.com" class="store-btn android-btn" target="_blank" rel="noopener">
-        <span class="store-btn__icon">▶</span>
-        <span class="store-btn__text">
-          <span class="store-btn__label">Get it on</span>
-          <span class="store-btn__name">Google Play</span>
-        </span>
+      <a href="https://play.google.com/store/apps/details?id=com.whiteorcaoptims.whezit" class="store-badge android-btn" target="_blank" rel="noopener">
+        <img src="/assets/images/google-play-badge-logo.svg" alt="Get it on Google Play" height="48" />
       </a>
     </div>
   </div>

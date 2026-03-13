@@ -51,20 +51,12 @@ permalink: /whezit/
     </div>
 
     <!-- Mobile: show the right store button per platform -->
-    <div class="download-mobile btn-group hero__cta">
-      <a href="{{ site.app_store_url }}" class="store-btn ios-btn" target="_blank" rel="noopener">
-        <span class="store-btn__icon">🍎</span>
-        <span class="store-btn__text">
-          <span class="store-btn__label">Download on the</span>
-          <span class="store-btn__name">App Store</span>
-        </span>
+    <div class="download-mobile store-badges hero__cta">
+      <a href="{{ site.app_store_url }}" class="store-badge ios-btn" target="_blank" rel="noopener">
+        <img src="{{ '/assets/images/app-store-apple-logo.svg' | relative_url }}" alt="Download on the App Store" height="48" />
       </a>
-      <a href="{{ site.google_play_url }}" class="store-btn android-btn" target="_blank" rel="noopener">
-        <span class="store-btn__icon">▶</span>
-        <span class="store-btn__text">
-          <span class="store-btn__label">Get it on</span>
-          <span class="store-btn__name">Google Play</span>
-        </span>
+      <a href="{{ site.google_play_url }}" class="store-badge android-btn" target="_blank" rel="noopener">
+        <img src="{{ '/assets/images/google-play-badge-logo.svg' | relative_url }}" alt="Get it on Google Play" height="48" />
       </a>
     </div>
 
@@ -85,12 +77,12 @@ permalink: /whezit/
 <!-- Proof Chips -->
 <div class="container">
   <div class="proof-chips">
-    <span class="chip chip--brand">🔒 Local-first</span>
-    <span class="chip chip--brand">🛡️ Privacy-focused</span>
-    <span class="chip chip--accent">📱 iOS + Android</span>
-    <span class="chip chip--accent">⚡ Native share capture</span>
-    <span class="chip chip--success">✅ No account required</span>
-    <span class="chip chip--success">📴 Works offline</span>
+    <span class="chip">🔒 Local-first</span>
+    <span class="chip">🛡️ Privacy-focused</span>
+    <span class="chip">📱 iOS + Android</span>
+    <span class="chip">⚡ Native share capture</span>
+    <span class="chip">✅ No account required</span>
+    <span class="chip">📴 Works offline</span>
   </div>
 </div>
 
@@ -197,9 +189,13 @@ permalink: /whezit/
     <div class="callout">
       <h2>Built for the reality of mobile life.</h2>
       <p>Most save-later tools are designed for browsers. Whezit is designed for the phone in your hand — where you actually discover things worth saving.</p>
-      <div class="btn-group" style="justify-content: center;">
-        <a href="{{ site.app_store_url }}" class="btn btn--primary ios-btn" target="_blank" rel="noopener">Download for iOS</a>
-        <a href="{{ site.google_play_url }}" class="btn btn--secondary android-btn" target="_blank" rel="noopener">Download for Android</a>
+      <div class="store-badges" style="justify-content: center;">
+        <a href="{{ site.app_store_url }}" class="store-badge ios-btn" target="_blank" rel="noopener">
+          <img src="{{ '/assets/images/app-store-apple-logo.svg' | relative_url }}" alt="Download on the App Store" height="48" />
+        </a>
+        <a href="{{ site.google_play_url }}" class="store-badge android-btn" target="_blank" rel="noopener">
+          <img src="{{ '/assets/images/google-play-badge-logo.svg' | relative_url }}" alt="Get it on Google Play" height="48" />
+        </a>
       </div>
     </div>
   </div>
@@ -285,20 +281,12 @@ permalink: /whezit/
         <p class="qr-sublabel">iOS &amp; Android · Mobile only</p>
       </div>
     </div>
-    <div class="download-mobile btn-group" style="justify-content: center;">
-      <a href="{{ site.app_store_url }}" class="store-btn ios-btn" target="_blank" rel="noopener">
-        <span class="store-btn__icon">🍎</span>
-        <span class="store-btn__text">
-          <span class="store-btn__label">Download on the</span>
-          <span class="store-btn__name">App Store</span>
-        </span>
+    <div class="download-mobile store-badges" style="justify-content: center;">
+      <a href="{{ site.app_store_url }}" class="store-badge ios-btn" target="_blank" rel="noopener">
+        <img src="{{ '/assets/images/app-store-apple-logo.svg' | relative_url }}" alt="Download on the App Store" height="48" />
       </a>
-      <a href="{{ site.google_play_url }}" class="store-btn android-btn" target="_blank" rel="noopener">
-        <span class="store-btn__icon">▶</span>
-        <span class="store-btn__text">
-          <span class="store-btn__label">Get it on</span>
-          <span class="store-btn__name">Google Play</span>
-        </span>
+      <a href="{{ site.google_play_url }}" class="store-badge android-btn" target="_blank" rel="noopener">
+        <img src="{{ '/assets/images/google-play-badge-logo.svg' | relative_url }}" alt="Get it on Google Play" height="48" />
       </a>
     </div>
   </div>

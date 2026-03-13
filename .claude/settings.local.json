@@ -13,7 +13,20 @@
       "Bash(PATH=\"/opt/homebrew/opt/ruby/bin:$PATH\" /opt/homebrew/opt/ruby/bin/gem list 2>/dev/null | grep -E \"jekyll|json\" | head -10)",
       "Bash(PATH=\"/opt/homebrew/opt/ruby/bin:$PATH\" /opt/homebrew/opt/ruby/bin/gem list 2>/dev/null | grep jekyll)",
       "Bash(PATH=\"/opt/homebrew/opt/ruby/bin:$PATH\" /opt/homebrew/opt/ruby/bin/gem install jekyll jekyll-redirect-from 2>&1 | tail -10)",
-      "Bash(ls /Users/esteevanderwalt/Code/MyApps/whiteorcaoptims/Gemfile* 2>/dev/null || echo \"none\")"
+      "Bash(ls /Users/esteevanderwalt/Code/MyApps/whiteorcaoptims/Gemfile* 2>/dev/null || echo \"none\")",
+      "Bash(gem list:*)",
+      "Read(//Users/esteevanderwalt/.rbenv/**)",
+      "Read(//Users/esteevanderwalt/.rvm/**)",
+      "Bash(rvm list:*)",
+      "Read(//opt/homebrew/bin/**)",
+      "Read(//usr/local/bin/**)",
+      "Read(//opt/homebrew/**)",
+      "Bash(/opt/homebrew/lib/ruby/gems/3.4.0/bin/jekyll build:*)",
+      "Bash(echo $SHELL)",
+      "Read(//Users/esteevanderwalt/**)",
+      "Bash(source ~/.zshrc && which jekyll)",
+      "Bash(jekyll build:*)",
+      "Bash(source ~/.zshrc && jekyll build 2>&1)"
     ]
   }
 }

@@ -311,47 +311,28 @@ a:hover {
   flex-wrap: wrap;
 }
 
-/* Store buttons */
-.store-btn {
-  display: inline-flex;
+/* Store badge images */
+.store-badges {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
   align-items: center;
-  gap: 10px;
-  padding: 12px 24px;
-  background: transparent;
-  color: var(--text) !important;
-  border-radius: var(--radius-full);
-  font-weight: 600;
-  font-size: 0.9rem;
-  transition: all var(--transition);
-  border: 1.5px solid var(--border);
 }
 
-.store-btn:hover {
-  background: var(--bg-subtle);
-  color: var(--text) !important;
-  border-color: var(--accent);
+.store-badge {
+  display: inline-block;
+  transition: opacity var(--transition), transform var(--transition);
+}
+
+.store-badge:hover {
+  opacity: 0.85;
   transform: translateY(-1px);
 }
 
-.store-btn__icon {
-  font-size: 1.4rem;
-  line-height: 1;
-}
-
-.store-btn__text {
-  display: flex;
-  flex-direction: column;
-}
-
-.store-btn__label {
-  font-size: 0.7rem;
-  font-weight: 400;
-  opacity: 0.75;
-}
-
-.store-btn__name {
-  font-size: 0.95rem;
-  font-weight: 700;
+.store-badge img {
+  height: 48px;
+  width: auto;
+  display: block;
 }
 
 /* ---- Hero ---- */
@@ -431,7 +412,7 @@ a:hover {
   align-items: center;
   gap: 6px;
   padding: 8px 16px;
-  background: var(--bg-subtle);
+  background: transparent;
   border: 1px solid var(--border);
   border-radius: var(--radius-full);
   font-size: 0.85rem;
@@ -1008,10 +989,11 @@ a:hover {
     flex-direction: column;
     align-items: center;
   }
-  .store-btn {
-    width: 100%;
-    max-width: 260px;
+  .store-badges {
     justify-content: center;
+  }
+  .store-badge img {
+    height: 44px;
   }
 }
 @media (prefers-reduced-motion: reduce) {
