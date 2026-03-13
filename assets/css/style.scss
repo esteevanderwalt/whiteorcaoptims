@@ -261,9 +261,13 @@ a:hover { color: var(--brand-dark); }
   transform: translateY(-1px);
 }
 .store-badge img {
-  height: 60px;
+  height: 100px;
   width: auto;
   display: block;
+}
+
+@media (max-width: 640px) {
+  .store-badge img { height: 60px; }
 }
 
 /* ---- Hero ---- */
