@@ -42,7 +42,13 @@
       "Bash(git -C /Users/esteevanderwalt/Code/MyApps/whiteorcaoptims add _site/index.html _site/redirects.json _site/whezit/index.html _site/whezit/privacy-policy.html _site/whezit/privacy-policy/index.html _site/whezit/privacy/index.html _site/whezit/terms-and-conditions.html _site/whezit/terms-and-conditions/index.html _site/whezit/terms/index.html && git -C /Users/esteevanderwalt/Code/MyApps/whiteorcaoptims commit -m \"$\\(cat <<'EOF'\nFix OG/canonical URLs using production Jekyll build\n\nCo-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>\nEOF\n\\)\" && git -C /Users/esteevanderwalt/Code/MyApps/whiteorcaoptims push 2>&1)",
       "Bash(git -C /Users/esteevanderwalt/Code/MyApps/whiteorcaoptims add CLAUDE.md && git -C /Users/esteevanderwalt/Code/MyApps/whiteorcaoptims commit -m \"$\\(cat <<'EOF'\nAdd CLAUDE.md with Jekyll build and deploy instructions\n\nCo-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>\nEOF\n\\)\" && git -C /Users/esteevanderwalt/Code/MyApps/whiteorcaoptims push 2>&1)",
       "Bash(git -C /Users/esteevanderwalt/Code/MyApps/whiteorcaoptims add _site/CLAUDE.md _config.yml && git -C /Users/esteevanderwalt/Code/MyApps/whiteorcaoptims commit -m \"$\\(cat <<'EOF'\nExclude CLAUDE.md from Jekyll build output\n\nCo-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>\nEOF\n\\)\" && git -C /Users/esteevanderwalt/Code/MyApps/whiteorcaoptims push 2>&1)",
-      "Bash(source ~/.zshrc && JEKYLL_ENV=production jekyll build 2>&1)"
+      "Bash(source ~/.zshrc && JEKYLL_ENV=production jekyll build 2>&1)",
+      "Bash(source ~/.zshrc && JEKYLL_ENV=production jekyll build 2>&1 && git -C /Users/esteevanderwalt/Code/MyApps/whiteorcaoptims add assets/css/style.scss _site/assets/css/style.css _site/assets/css/style.css.map && git -C /Users/esteevanderwalt/Code/MyApps/whiteorcaoptims commit -m \"$\\(cat <<'EOF'\nIncrease desktop store badge size to 140px\n\nCo-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>\nEOF\n\\)\" && git -C /Users/esteevanderwalt/Code/MyApps/whiteorcaoptims push 2>&1)",
+      "Bash(JEKYLL_ENV=production jekyll build 2>&1 | tail -5)",
+      "Bash(JEKYLL_ENV=production jekyll build 2>&1 | tail -3)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git push:*)"
     ]
   }
 }
