@@ -39,9 +39,14 @@
 
   <!-- Styles -->
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}?v={{ site.time | date: '%Y%m%d%H%M%S' }}" />
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest" defer></script>
 </head>
 <body>
   {{ content }}
+
+  <script>lucide.createIcons();</script>
 
   <script>
     // iOS / Android button targeting

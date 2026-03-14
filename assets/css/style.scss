@@ -6,6 +6,22 @@
    Inter font loaded via <head> in layout
    ============================================================ */
 
+/* ---- Lucide Icons ---- */
+[data-lucide] {
+  width: 1em;
+  height: 1em;
+  stroke: currentColor;
+  stroke-width: 2;
+  fill: none;
+  vertical-align: -0.125em;
+  flex-shrink: 0;
+}
+.bento-card__icon [data-lucide] {
+  width: 2rem;
+  height: 2rem;
+  stroke-width: 1.5;
+}
+
 /* ---- Reset ---- */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 img, video { max-width: 100%; display: block; }
