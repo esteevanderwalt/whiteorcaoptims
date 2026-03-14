@@ -342,6 +342,7 @@ a:hover {
 .store-badge img {
   height: 140px;
   width: auto;
+  max-width: none;
   display: block;
 }
 
