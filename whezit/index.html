@@ -63,12 +63,10 @@ permalink: /whezit/
     <!-- Phone Mockup -->
     <div class="hero__mockup">
       <div class="hero__mockup-frame">
-        {% assign hero_screenshot = site.static_files | where_exp: "f", "f.path contains 'screenshots/hero'" | first %}
-        {% if hero_screenshot %}
-          <img src="{{ hero_screenshot.path | relative_url }}" alt="Whezit app screenshot" />
-        {% else %}
-          <span>Screenshot<br />coming soon</span>
-        {% endif %}
+        <picture>
+          <source media="(prefers-color-scheme: dark)" srcset="{{ '/assets/images/screenshots/dark/IMG_bookmarks.PNG' | relative_url }}" />
+          <img src="{{ '/assets/images/screenshots/light/IMG_bookmarks.PNG' | relative_url }}" alt="Whezit bookmarks screenshot" />
+        </picture>
       </div>
     </div>
   </div>
@@ -124,18 +122,18 @@ permalink: /whezit/
       <h2>See it in action</h2>
     </div>
     <div class="screenshots-strip">
-      {% assign screenshots = site.static_files | where_exp: "f", "f.path contains 'screenshots/'" %}
-      {% if screenshots.size > 0 %}
-        {% for screenshot in screenshots limit: 6 %}
+      {% assign strip_screens = "bookmarks,search,collections,share,settings" | split: "," %}
+      {% for name in strip_screens %}
+      <div class="screenshot-item">
+        <span class="screenshot-caption">{{ name | capitalize }}</span>
         <div class="screenshot-frame">
-          <img src="{{ screenshot.path | relative_url }}" alt="Whezit screenshot" loading="lazy" />
+          <picture>
+            <source media="(prefers-color-scheme: dark)" srcset="{{ '/assets/images/screenshots/dark/IMG_' | append: name | append: '.PNG' | relative_url }}" />
+            <img src="{{ '/assets/images/screenshots/light/IMG_' | append: name | append: '.PNG' | relative_url }}" alt="Whezit {{ name }} screenshot" loading="lazy" />
+          </picture>
         </div>
-        {% endfor %}
-      {% else %}
-        {% for i in (1..5) %}
-        <div class="screenshot-frame">Screen {{ i }}</div>
-        {% endfor %}
-      {% endif %}
+      </div>
+      {% endfor %}
     </div>
   </div>
 </section>

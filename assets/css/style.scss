@@ -58,6 +58,12 @@ a { text-decoration: none; }
 
   /* Transitions */
   --transition:   0.2s cubic-bezier(0.4,0,0.2,1);
+
+  /* Callout */
+  --callout-bg:         linear-gradient(135deg, #FFF0ED 0%, #E6FAFA 100%);
+  --callout-border:     rgba(33,214,214,0.35);
+  --callout-text:       #000435;
+  --callout-text-sub:   #333333;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -84,6 +90,12 @@ a { text-decoration: none; }
     --shadow-sm:    0 1px 3px rgba(0,0,0,0.4);
     --shadow:       0 4px 16px rgba(0,0,0,0.4);
     --shadow-lg:    0 16px 48px rgba(0,0,0,0.6);
+
+    /* Callout */
+    --callout-bg:         linear-gradient(135deg, #000435 0%, #11164A 100%);
+    --callout-border:     rgba(33,214,214,0.25);
+    --callout-text:       #ffffff;
+    --callout-text-sub:   rgba(255,255,255,0.85);
   }
 }
 
@@ -442,15 +454,15 @@ a:hover { color: var(--brand-dark); }
 
 /* ---- Callout ---- */
 .callout {
-  background: linear-gradient(135deg, #000435 0%, #11164A 100%);
-  border: 1px solid rgba(33,214,214,0.25);
+  background: var(--callout-bg);
+  border: 1px solid var(--callout-border);
   border-radius: var(--radius-lg);
   padding: 64px 48px;
   text-align: center;
-  color: #fff;
+  color: var(--callout-text);
 }
-.callout h2 { color: #fff; margin-bottom: 16px; }
-.callout p { color: rgba(255,255,255,0.85); max-width: 540px; margin: 0 auto 36px; font-size: 1.1rem; }
+.callout h2 { color: var(--callout-text); margin-bottom: 16px; }
+.callout p { color: var(--callout-text-sub); max-width: 540px; margin: 0 auto 36px; font-size: 1.1rem; }
 .callout .btn--primary {
   background: #FF5733;
   color: #fff;
@@ -489,6 +501,21 @@ a:hover { color: var(--brand-dark); }
   scroll-snap-type: x mandatory;
   -webkit-overflow-scrolling: touch;
 }
+.screenshot-item {
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  scroll-snap-align: start;
+}
+.screenshot-caption {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--brand);
+}
 .screenshot-frame {
   flex-shrink: 0;
   width: 200px;
@@ -497,7 +524,6 @@ a:hover { color: var(--brand-dark); }
   border: 2px solid var(--border);
   border-radius: 24px;
   overflow: hidden;
-  scroll-snap-align: start;
   display: flex;
   align-items: center;
   justify-content: center;
