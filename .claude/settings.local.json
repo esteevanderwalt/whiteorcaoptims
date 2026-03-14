@@ -48,7 +48,11 @@
       "Bash(JEKYLL_ENV=production jekyll build 2>&1 | tail -3)",
       "Bash(git add:*)",
       "Bash(git commit:*)",
-      "Bash(git push:*)"
+      "Bash(git push:*)",
+      "Bash(JEKYLL_ENV=production jekyll build 2>&1 | tail -3 && git add assets/css/style.scss _site/assets/css/style.css _site/assets/css/style.css.map && git commit -m \"$\\(cat <<'EOF'\nBump mobile store badge height to 140px\n\nCo-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>\nEOF\n\\)\" && git push)",
+      "Bash(python3:*)",
+      "Bash(which convert:*)",
+      "Bash(ls /opt/homebrew/share/fonts/**/*.ttf)"
     ]
   }
 }
